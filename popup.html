@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>URL Parameter Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 350px;
+            padding: 10px;
+        }
+        
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        
+        .tab {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 5px;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .tab.active {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        .content {
+            display: none;
+        }
+        
+        .content.active {
+            display: block;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+        }
+        
+        input:focus {
+            border-bottom: 2px solid #007bff;
+        }
+        
+        button {
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+        
+        .delete-btn {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .delete-btn:hover {
+            background-color: #db2121;
+        }
+
+        
+        .add-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 3px;
+            width: 48%;
+        }
+
+        .add-btn:hover {
+            background-color: #036ad8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 3px;
+            width: 48%;
+        }
+
+        .save-btn {
+            background-color: white;
+            color: #007bff;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 3px;
+            width: 48%;
+            border: 1px solid gray;
+        }
+        .button-group{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .credits{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs">
+        <div class="tab active" id="paramTab">Parameters</div>
+        <div class="tab" id="infoTab">Info</div>
+    </div>
+
+    <div class="content active" id="paramContent">
+        <table>
+            <thead>
+                <tr>
+                    <th>Fields</th>
+                    <th>Value</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="fields"></tbody>
+        </table>
+        <div class="button-group">
+            <button class="add-btn" id="add">Add Params</button>
+            <button id="save" class="save-btn">Save</button>
+        </div>
+    </div>
+
+    <div class="content" id="infoContent">
+        <pre id="info"></pre>
+        <div class="credits">
+            <div>by NghiaOMG</div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
