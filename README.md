@@ -2,7 +2,7 @@
 
 ## Credit by NghiaOMG
 
-**ChomeExtension-ParamEditor** là một tiện ích mở rộng cho Chrome giúp bạn dễ dàng quản lý và chỉnh sửa các tham số URL trực tiếp từ trình duyệt. Với** ChomeExtension-ParamEditor**, bạn có thể:
+**ChomeExtension-ParamEditor** là một tiện ích mở rộng cho Chrome giúp bạn dễ dàng quản lý và chỉnh sửa các tham số URL trực tiếp từ trình duyệt. Với **ChomeExtension-ParamEditor**, bạn có thể:
 
 - Xem và chỉnh sửa các tham số URL của trang web hiện tại.
 - Thêm, xóa hoặc thay đổi giá trị của các tham số URL một cách nhanh chóng và dễ dàng.
